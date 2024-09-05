@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Authentication By Tushar Gupta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div class="left">
+            <h6>It's diffusion time...</h6>
+        </div>
+        <div class="right">
+            <div class="conForm">
+                <form>
+                    <h2>Sign Up</h2>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <input type="password" name="con-password" id="con-password" placeholder="Confirm Password" required>
+                    
+                    <div class="form-actions">
+                        <a href=""><span class="forgetPass">Forgot Password?</span></a>
+                    </div>
+                    <p id="error-message" style="color: red;"></p>
+                    <p id="success-message" style="color: green;"></p>
+                    <div class="formBottom">
+                        <button id="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="notAccount">
+                <p>Don't have an account? <a href="">Sign In</a></p>
+            </div>
+            <div class="ContinueWith">
+                <div class="text">Or continue with</div>
+            </div>
+            <div class="signInAuth">
+                <button id="googleSignInBtn">
+                    <i class="fa-brands fa-google"></i>
+                </button>
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div onclick="click" class="error-message"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Authentication Page, Created By <a href="https://tushar-gupta-portfolio.vercel.app/">Tushar Gupta </span></Tushar>♥️</p>
+    </div>
+</body>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="app.js"></script>
+</html>
